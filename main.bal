@@ -2,7 +2,6 @@ import ballerinax/trigger.asgardeo;
 import ballerina/log;
 import ballerina/http;
 
-// hello
 configurable asgardeo:ListenerConfig config = ?;
 
 listener http:Listener httpListener = new(8090);
