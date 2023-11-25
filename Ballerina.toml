@@ -1,6 +1,8 @@
 [package]
 distribution = "2201.4.1"
 org="canpoc"
+version = "0.1.0"
+name = "asgardeo_events"
 
 [build-options]
 observabilityIncluded = true
