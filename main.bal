@@ -16,23 +16,23 @@ service asgardeo:LoginService on webhookListener {
     }
 }
 
-// service asgardeo:RegistrationService on webhookListener2 {
+ service asgardeo:RegistrationService on webhookListener2 {
 
-//     remote function onAddUser(asgardeo:AddUserEvent event ) returns error? {
+     remote function onAddUser(asgardeo:AddUserEvent event ) returns error? {
         
-//         log:printInfo(event.toJsonString());
-//     }
+         log:printInfo(event.toJsonString());
+     }
     
-//     remote function onConfirmSelfSignup(asgardeo:GenericEvent event ) returns error? {
+     remote function onConfirmSelfSignup(asgardeo:GenericEvent event ) returns error? {
         
-//         log:printInfo(event.toJsonString());
-//     }
+         log:printInfo(event.toJsonString());
+     }
     
-//     remote function onAcceptUserInvite(asgardeo:GenericEvent event ) returns error? {
+     remote function onAcceptUserInvite(asgardeo:GenericEvent event ) returns error? {
         
-//         log:printInfo(event.toJsonString());
-//     }
-// }
+         log:printInfo(event.toJsonString());
+     }
+ }
 
 service asgardeo:UserOperationService on webhookListener2 {
     
